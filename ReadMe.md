@@ -1,14 +1,14 @@
-# Hindi Fake News & Misinformation Detection System 📰🕵️‍♂️
+# Hindi Fake News & Misinformation Detection System 
 
 An end-to-end Natural Language Processing (NLP) pipeline designed to classify Hindi text as either genuine news or misinformation. This project tackles the growing challenge of fake news in regional languages by leveraging both traditional machine learning and deep learning architectures.
 
-## 🚀 Overview
+##  Overview
 
 The system is built in two primary phases:
 1. **Model Training:** Conducted on Kaggle, experimenting with different architectures including Naive Bayes for baseline text classification and Long Short-Term Memory (LSTM) networks for capturing sequential context in Hindi sentences.
 2. **Web Application:** A local web interface built to serve the model, allowing users to input Hindi text and receive real-time classification.
 
-## 🛠️ Tech Stack & Tools
+##  Tech Stack & Tools
 * **Programming Language:** Python
 * **Deep Learning:** Pytorch (LSTMs)
 * **Machine Learning:** Scikit-learn (Naive Bayes)
@@ -16,7 +16,7 @@ The system is built in two primary phases:
 * **Web Framework:** Streamlit (via `app.py`)
 * **Environment:** Kaggle (Training), Local Virtual Environment (Deployment)
 
-## 🏗️ Step-by-Step Methodology
+##  Step-by-Step Methodology
 
 The development of this system followed a structured machine learning pipeline, moving from raw data processing to web deployment.
 
