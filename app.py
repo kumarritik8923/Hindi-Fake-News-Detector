@@ -5,7 +5,6 @@ import numpy as np
 import re
 from gensim.models import Word2Vec
 
-# --- AI LOGIC (Keep this as is) ---
 hindi_stopwords = set(["है", "और", "कि", "का", "की", "के", "में", "से", "को", "पर", "यह", "वह", "जो", "तो", "भी", "ने", "एक", "हो", "कर", "साथ"])
 
 def custom_hindi_tokenizer(text):
@@ -41,18 +40,14 @@ def text_to_sequence(tokens, w2v, max_len=20):
     else: seq = seq[:max_len]
     return np.array(seq)
 
-# --- WEB DESIGN & CREATIVITY SECTION ---
+# --- WEB DESIGN ---
 
-# 1. Page Title (Change the text and the emoji!)
 st.title("🕵️‍♂️ Hindi Fake News Detector")
 
-# 2. Description (Add your own instructions or project details)
 st.write("Welcome to our core NLP project. Paste a suspicious Hindi WhatsApp forward below to check its authenticity based on our custom LSTM model.")
 
-# 3. The Input Box (Change 'Hindi Text Input:' to whatever you like)
 user_input = st.text_area("✍️ Enter Hindi News Snippet Here:", height=150)
 
-# 4. The Button (Change 'Analyze Text' to 'Check News' or 'Verify')
 if st.button("Analyze Text"):
     if user_input.strip() == "":
         st.warning("Please enter some text first!")
@@ -67,11 +62,9 @@ if st.button("Analyze Text"):
         
         st.markdown("---")
         
-        # 5. The Output Display (Customize the success/error messages!)
         if prediction >= 0.5:
             st.error(f"🚨 **FAKE NEWS DETECTED** (The model is {prediction*100:.1f}% confident this is fake.)")
         else:
             st.success(f"✅ **LIKELY REAL NEWS** (The model is {(1-prediction)*100:.1f}% confident this is real.)")
         
-        # 6. Show the underlying logic (Great for presentations!)
         st.info(f"**Words identified after processing:** {', '.join(tokens)}")
