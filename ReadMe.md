@@ -2,6 +2,11 @@
 
 An end-to-end Natural Language Processing (NLP) pipeline designed to classify Hindi text as either genuine news or misinformation. This project tackles the growing challenge of fake news in regional languages by leveraging both traditional machine learning and deep learning architectures.
 
+## 📸 Application Preview
+The application is currently live and deployed on Hugging Face Spaces. 
+
+👉 **[Click Here to Test the Hindi Fake News Detector!](https://huggingface.co/spaces/rkc2026/Hindi-Fake-News-Detector)**
+
 ##  Overview
 
 The system is built in two primary phases:
