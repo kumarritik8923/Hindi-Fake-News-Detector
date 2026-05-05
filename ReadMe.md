@@ -52,4 +52,5 @@ The development of this system followed a structured machine learning pipeline, 
 2. Create a python virtual environment : python -m venv venv
 3. Activate environment : venv\Scripts\activate
 4. install dependencies mentioned in requiremnts file : pip install -r requirements.txt
-5. run application: streamlit run app.py
+5. Run nlp_project.ipynb file first after loading dataset. After this model will be trained and saved. Place those files in in folder named models.
+6. Finally, run application: streamlit run app.py
