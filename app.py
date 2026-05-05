@@ -44,9 +44,9 @@ def text_to_sequence(tokens, w2v, max_len=20):
 
 st.title("🕵️‍♂️ Hindi Fake News Detector")
 
-st.write("Welcome to our core NLP project. Paste a suspicious Hindi WhatsApp forward below to check its authenticity based on our custom LSTM model.")
+st.write("Welcome to our NLP project. Enter Hindi news text to analyze whether it is fake or real.")
 
-user_input = st.text_area("✍️ Enter Hindi News Snippet Here:", height=150)
+user_input = st.text_area("✍️ Enter Hindi Text Here:", height=150)
 
 if st.button("Analyze Text"):
     if user_input.strip() == "":
