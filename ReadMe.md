@@ -46,3 +46,10 @@ The development of this system followed a structured machine learning pipeline, 
 **Step 5: Web Application Deployment**
 * Developed a local frontend using Streamlit (`app.py`) to serve the trained model.
 * Integrated the preprocessing pipeline into the app so raw user input is automatically cleaned and tokenized before being passed to the model for real-time inference.
+
+##  How to run on your machine
+1. Create a folder and clone this repo inside it. 
+2. Create a python virtual environment : python -m venv venv
+3. Activate environment : venv\Scripts\activate
+4. install dependencies mentioned in requiremnts file : pip install -r requirements.txt
+5. run application: streamlit run app.py
